@@ -123,3 +123,16 @@ subsets(regsubsets.out,statistic="adjr2",legend="bottomright",main="Adjusted R^2
 
 The best two variables to use in this model would be length 2 and width.
 
+```{r}
+which.max(summary.out$adjr2)
+```
+
+
+```{r}
+summary.out$which[2,]
+```
+
+
+What the summary shows is that the best two variables to use will be Length 2 and width. 
+
+
